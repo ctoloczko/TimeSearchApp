@@ -1,0 +1,78 @@
+h1 {
+  text-align: center;
+  margin: 30px 20px;
+  padding-top: 40px;
+}
+
+.select-location {
+  width: 80%;
+  height: 35px;
+  font-family: "Mulish", sans-serif;
+  border-radius: 5px;
+  background-color: #e9eff5;
+  border: none;
+  box-shadow: inset 10px 10px 34px 1px rgba(117, 123, 133, 0.2);
+}
+
+.select-element {
+  text-align: center;
+  padding: 15px 30px;
+}
+
+.clock-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px auto;
+  font-family: "Mulish", sans-serif;
+  border-radius: 9px;
+  background-image: url("https://images.unsplash.com/photo-1545494749-a5f7bf606a83?q=80&w=2427&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.locations-display {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  margin: 0 20px;
+}
+
+.city {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.city-details {
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.city-details:hover {
+  background-color: #d3d8dd;
+  border-radius: 10px;
+}
+
+.date {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.time {
+  font-size: 35px;
+  color: rgb(172, 4, 4);
+}
+
+footer {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+footer a {
+  color: black;
+  opacity: 0.6;
+  font-weight: bold;
+  text-decoration: none;
+}

@@ -4,32 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Time</title>
-  </head>
+    <link rel="stylesheet" href="src/style.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
   <body>
-    <h1>What is the time now?</h1>
-    <label for="select-location">Choose your location</label>
-    <select name="" id="select-location">
-      <option value="">Stockholm</option>
-      <option value="">Warsaw</option>
-      <option value="">New York</option>
-      <option value="">Mumbai</option>
-    </select>
-
-    <h2>
-      <div>Your current location</div>  </h2>
-      <p> <div>Sunday, 28th April, 2024</div></p>
-      <h2><div>3:16:12 am</div></h2>
+    
+    <div class="clock-container">
+      <h1> What is the time now?  
+</h1>
+<div class="select-element">
+     <select name="" class="select-location" id="select-location">
+        <option value="">Select a city</option>
+        <option value="">Stockholm</option>
+        <option value="">Warsaw</option>
+        <option value="">New York</option>
+       <option value="">Mumbai</option>
+     </select></div>
+<div class="locations-display"> 
+    <h2 class="city-details">
+      <div class="city">Your location</div> 
+      <div class="date">Sunday, 28th April, 2024</div>
+    <div class="time">3:16:12 am</div> </h2>
+     
+    
    
     
-
-     <h2>
-      <div>Your current location</div>  </h2>
-      <p> <div>Sunday, 28th April, 2024</div></p>
-      <h2><div>3:16:12 am</div></h2>
-   
+     <h2 class="city-details">
+      <div class="city">Other location</div> 
+     
+      <div class="date">Sunday, 28th April, 2024</div>
+      <div class="time">3:16:12 am</div>
+    </h2>
+     
       
+</div>
 
     <footer>
+      
       This project was coded by <a href="https://github.com/ctoloczko" target="_blank" rel="noopener noreferrer">Celina Toloczko</a> and is on 
      <a href="https://github.com/ctoloczko/TimeSearchApp" target="_blank" rel="noopener noreferrer">GitHub</a> and hosted on
      <a href="https://timetraverse.netlify.app/" target="_blank" rel="noopener noreferrer">Netlify</a>.
