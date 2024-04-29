@@ -57,7 +57,7 @@ select:focus {
 
 .city-details:hover {
   background-color: rgb(211, 216, 221, 0.6);
-  border-radius: 10px;
+  border-radius: 7px;
   cursor: help;
 }
 
@@ -76,7 +76,7 @@ footer {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 30px;
-  font-size: 13px;
+  font-size: 11px;
   opacity: 0.6;
 }
 
