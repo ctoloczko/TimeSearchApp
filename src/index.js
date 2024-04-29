@@ -21,12 +21,13 @@ function updateNewLocation(event) {
   let newCityName = newCityTimeZone.replace("_", " ").split("/")[1];
   newCityTimeZone = moment.tz(newCityTimeZone);
   let newCityDetailsElement = document.querySelector("#new-city-details");
-  newCityDetailsElement.innerHTML = `<div class="city">${newCityName}</div> 
+  if (event.target.value.length > 0)
+    newCityDetailsElement.innerHTML = `<div class="city">${newCityName}</div> 
      
       <div class="date">${newCityTimeZone.format("dddd, MMM Do YY")}</div>
       <div class="time">${newCityTimeZone.format(
         "h:mm:ss [<small>]A[</small>]"
-      )}</div>`;
+      )}</div> <a class="back" href="/">Back</a>`;
   setTimeout(() => {
     updateNewLocation(event);
   }, 1000);

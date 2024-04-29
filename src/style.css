@@ -80,6 +80,13 @@ footer {
   opacity: 0.6;
 }
 
+.back {
+  color: rgb(61, 61, 61, 0.6);
+  opacity: 0.6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 footer a {
   color: black;
   opacity: 0.6;
