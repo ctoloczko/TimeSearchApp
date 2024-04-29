@@ -11,7 +11,10 @@ function updateMyLocation(params) {
   currentCityTimeElement.innerHTML = currentCityTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
+  setInterval(updateMyLocation, 1000);
 }
+
+updateMyLocation();
 
 function updateNewLocation(event) {
   let newCityTimeZone = event.target.value;
@@ -24,11 +27,13 @@ function updateNewLocation(event) {
       <div class="time">${newCityTimeZone.format(
         "h:mm:ss [<small>]A[</small>]"
       )}</div>`;
+  setTimeout(() => {
+    updateNewLocation(event);
+  }, 1000);
 }
 
 let citiesSelectElement = document.querySelector("#select-location");
 citiesSelectElement.addEventListener("change", updateNewLocation);
-setInterval(updateNewLocation, 1000);
 
-updateMyLocation();
-setInterval(updateMyLocation, 1000);
+updateNewLocation();
+setInterval(updateNewLocation, 1000);
