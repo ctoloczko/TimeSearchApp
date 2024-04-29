@@ -27,7 +27,8 @@ function updateNewLocation(event) {
       <div class="date">${newCityTimeZone.format("dddd, MMM Do YY")}</div>
       <div class="time">${newCityTimeZone.format(
         "h:mm:ss [<small>]A[</small>]"
-      )}</div> <a class="back" href="/">Back</a>`;
+      )}</div>`;
+
   setTimeout(() => {
     updateNewLocation(event);
   }, 1000);
