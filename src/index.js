@@ -13,5 +13,22 @@ function updateMyLocation(params) {
   );
 }
 
+function updateNewLocation(event) {
+  let newCityTimeZone = event.target.value;
+  let newCityName = newCityTimeZone.replace("_", " ").split("/")[1];
+  newCityTimeZone = moment.tz(newCityTimeZone);
+  let newCityDetailsElement = document.querySelector("#new-city-details");
+  newCityDetailsElement.innerHTML = `<div class="city">${newCityName}</div> 
+     
+      <div class="date">${newCityTimeZone.format("dddd, MMM Do YY")}</div>
+      <div class="time">${newCityTimeZone.format(
+        "h:mm:ss [<small>]A[</small>]"
+      )}</div>`;
+}
+
+let citiesSelectElement = document.querySelector("#select-location");
+citiesSelectElement.addEventListener("change", updateNewLocation);
+setInterval(updateNewLocation, 1000);
+
 updateMyLocation();
 setInterval(updateMyLocation, 1000);
