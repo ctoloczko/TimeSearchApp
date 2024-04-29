@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
+
 </head>
   <body>
     
@@ -26,9 +29,9 @@
 <div class="locations-display"> 
   <div title="This is your location">
     <h2 class="city-details">
-      <div class="city">Your location</div> 
-      <div class="date">Sunday, 28th April, 2024</div>
-    <div class="time">3:16:12 am</div> </h2>
+      <div class="city" id="current-city-name">Your location</div> 
+      <div class="date" id="current-city-date">Sunday, 28th April, 2024</div>
+    <div class="time" id="current-city-time">3:16:12 am</div> </h2>
      
     </div>
    
@@ -49,5 +52,7 @@
      <a href="https://github.com/ctoloczko/TimeSearchApp" target="_blank" rel="noopener noreferrer">GitHub</a> and hosted on
      <a href="https://timetraverse.netlify.app/" target="_blank" rel="noopener noreferrer">Netlify</a>.
     </footer>
+
+    <script src="src/index.js"></script>
   </body>
 </html>
